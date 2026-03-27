@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirth Electrical Services - Digital Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-title">Tirth Electrical</div>
+                    <div class="logo-subtitle">SERVICES</div>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="nav-item active" data-page="dashboard">
+                    <i class="fas fa-grid-2"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" data-page="projects">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </button>
+                <button class="nav-item" data-page="billing">
+                    <i class="fas fa-file-invoice"></i>
+                    <span>Billing & Invoicing</span>
+                </button>
+                <button class="nav-item" data-page="accounts">
+                    <i class="fas fa-wallet"></i>
+                    <span>Accounts & Finance</span>
+                </button>
+                <button class="nav-item" data-page="expenses">
+                    <i class="fas fa-receipt"></i>
+                    <span>Expenses</span>
+                </button>
+                <button class="nav-item" data-page="inventory">
+                    <i class="fas fa-box"></i>
+                    <span>Inventory</span>
+                </button>
+                <button class="nav-item" data-page="labour">
+                    <i class="fas fa-users"></i>
+                    <span>Labour & HR</span>
+                </button>
+                <button class="nav-item" data-page="dailywork">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Daily Work</span>
+                </button>
+                <button class="nav-item" data-page="users">
+                    <i class="fas fa-gear"></i>
+                    <span>Users</span>
+                </button>
+            </nav>
+
+            <div class="user-profile">
+                <div class="user-avatar">AU</div>
+                <div class="user-info">
+                    <div class="user-name">Admin User</div>
+                    <div class="user-email">admin@tirth-electrical...</div>
+                </div>
+                <button class="settings-btn">
+                    <i class="fas fa-gear"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1 class="page-title">Dashboard</h1>
+                    <p class="page-subtitle">Manage your electrical contracting operations.</p>
+                </div>
+                <div class="header-right">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge"></span>
+                    </button>
+                    <button class="quick-action-btn">Quick Action</button>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content" id="dashboardContent">
+                <!-- Metrics Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-title">Total Revenue</span>
+                            <div class="metric-icon bg-amber">
+                                <i class="fas fa-indian-rupee-sign"></i>
+                            </div>
+                        </div>
+                        <div class="metric-value">₹0</div>
+                        <div class="metric-change positive">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            <span>+12.5%</span>
+                            <span class="period">vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-title">Active Projects</span>
+                            <div class="metric-icon bg-blue">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                        </div>
+                        <div class="metric-value">0</div>
+                        <div class="metric-change positive">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            <span>+2</span>
+                            <span class="period">vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-title">Outstanding Payments</span>
+                            <div class="metric-icon bg-amber">
+                                <i class="fas fa-triangle-exclamation"></i>
+                            </div>
+                        </div>
+                        <div class="metric-value">₹0</div>
+                        <div class="metric-change negative">
+                            <i class="fas fa-arrow-trend-down"></i>
+                            <span>-5.2%</span>
+                            <span class="period">vs last month</span>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-title">Total Workers</span>
+                            <div class="metric-icon bg-purple">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="metric-value">0</div>
+                        <div class="metric-change positive">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            <span>+18</span>
+                            <span class="period">vs last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="charts-section">
+                    <div class="chart-container revenue-chart">
+                        <div class="chart-header">
+                            <i class="fas fa-arrow-trend-up chart-icon"></i>
+                            <h3>Revenue vs Expenses (YTD)</h3>
+                        </div>
+                        <div class="chart-area">
+                            <div class="chart-y-axis">
+                                <span>₹0.04k</span>
+                                <span>₹0.03k</span>
+                                <span>₹0.02k</span>
+                                <span>₹0.01k</span>
+                                <span>₹0k</span>
+                            </div>
+                            <div class="chart-canvas">
+                                <div class="chart-grid"></div>
+                                <div class="chart-x-axis">
+                                    <span>Jan</span>
+                                    <span>Feb</span>
+                                    <span>Mar</span>
+                                    <span>Apr</span>
+                                    <span>May</span>
+                                    <span>Jun</span>
+                                    <span>Jul</span>
+                                    <span>Aug</span>
+                                    <span>Sep</span>
+                                    <span>Oct</span>
+                                    <span>Nov</span>
+                                    <span>Dec</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-dot revenue"></span>
+                                <span>Revenue</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot expenses"></span>
+                                <span>Expenses</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container project-status">
+                        <h3>Project Status</h3>
+                        <div class="status-list">
+                            <div class="status-item">
+                                <div class="status-label">
+                                    <span class="status-dot blue"></span>
+                                    <span>Planning:</span>
+                                </div>
+                                <span class="status-value">1</span>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">
+                                    <span class="status-dot green"></span>
+                                    <span>Active:</span>
+                                </div>
+                                <span class="status-value">0</span>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">
+                                    <span class="status-dot purple"></span>
+                                    <span>On Hold:</span>
+                                </div>
+                                <span class="status-value">0</span>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">
+                                    <span class="status-dot emerald"></span>
+                                    <span>Completed:</span>
+                                </div>
+                                <span class="status-value">0</span>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">
+                                    <span class="status-dot gray"></span>
+                                    <span>Cancelled:</span>
+                                </div>
+                                <span class="status-value">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerts Section -->
+                <div class="alerts-section">
+                    <div class="alert-card">
+                        <div class="alert-content">
+                            <div class="alert-icon bg-amber">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="alert-text">
+                                <h4>Low Stock Alert</h4>
+                                <p>0 items require restocking</p>
+                            </div>
+                        </div>
+                        <a href="#" class="alert-link">
+                            View Inventory
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="alert-card">
+                        <div class="alert-content">
+                            <div class="alert-icon bg-amber">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <div class="alert-text">
+                                <h4>Pending Invoices</h4>
+                                <p>0 invoices await approval</p>
+                            </div>
+                        </div>
+                        <a href="#" class="alert-link">
+                            View Billing
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-brand">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 0L0 8l8 8 8-8-8-8z" />
+                        </svg>
+                        <span>Made with Replit</span>
+                    </div>
+                </footer>
+            </div>
+
+            <!-- Coming Soon Page -->
+            <div class="coming-soon" id="comingSoonContent" style="display: none;">
+                <h2>Coming Soon</h2>
+                <p id="comingSoonText">This section is under development</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
